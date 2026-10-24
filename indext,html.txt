@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PolyConnect - Student & Admin Portal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0f172a;
+            color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            text-align: center;
+            width: 350px;
+        }
+
+        h1 {
+            color: #38bdf8;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #94a3b8;
+            font-size: 14px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #3b82f6;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            margin: 10px 0;
+            width: 100%;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #2563eb;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>PolyConnect</h1>
+        <p>Pabna Govt. Polytechnic Institute</p>
+
+        <button onclick="openStudentPortal()">Student Portal</button>
+        <button onclick="checkAdmin()">Admin Panel</button>
+    </div>
+
+    <script>
+        function openStudentPortal() {
+            alert("Student Portal-e swagotom! Ekhane class routine o notice dekhabe.");
+        }
+
+        function checkAdmin() {
+            let password = prompt("Admin Password Din:");
+            if (password === "12345") {
+                alert("Login Successful! Admin panel-e prokash kora jacche.");
+                // Ekhane admin dashboard-e jabar ba dekhabar code thakbe
+            } else if (password !== null) {
+                alert("Bhul Password! Punoray chesta korun.");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
